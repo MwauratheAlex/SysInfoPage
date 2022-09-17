@@ -23,7 +23,7 @@ report_disk_space () {
 }
 
 report_home_space () {
-	if [[ "$(id -u)" -eq 0 ]]; then
+	if [[ "$(id -u)" -eq 0 ]]; then #Check if user is a Superuser
 		cat <<- _EOF_
 		<h2>Home Space Utilization (All Users)</h2>
 		<pre>$(du -sh /home/*)</pre>
