@@ -15,3 +15,4 @@ sudo chmod a+x sys_info_page
 ```bash 
 firefox sys_info_page.html&
 ```
+* A webpage will be opened displaying your system information
